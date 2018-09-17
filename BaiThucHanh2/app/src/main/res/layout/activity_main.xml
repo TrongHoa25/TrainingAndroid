@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtview1"
+                    android:textSize="20sp"
+                    android:text="Col:"
+                    />
+
+                <EditText
+                    android:id="@+id/edtcol"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+                <TextView
+                    android:id="@+id/txtview2"
+                    android:textSize="20sp"
+                    android:text=", Row :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edtrow"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+                <Button
+                    android:id="@+id/btninitialize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INITIALIZE"
+                    />
+                <Button
+                    android:id="@+id/btncalculate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CALCULATE"
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:background="#0099cc">
+            <GridLayout
+                android:id="@+id/matrix1">
+
+            </GridLayout>
+        </TableRow>
+        <TableRow android:background="#33b5e5"
+            >
+            <GridLayout
+                android:id="@+id/matrix2">
+            </GridLayout>
+        </TableRow>
+        <TableRow android:background="#303f9f">
+            <GridLayout
+                android:id="@+id/matrixres">
+            </GridLayout>
+        </TableRow>
+    </TableLayout>
+</ScrollView>
